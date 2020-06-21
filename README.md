@@ -1,4 +1,4 @@
-# ticketing App with micro services
+# ticketing App with micro services using Typescript
 
 - Users can list a ticket for an event (concert, sports) for sale
 - Other users can purchase this ticket
