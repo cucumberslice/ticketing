@@ -16,6 +16,12 @@ spec:
         - name: auth
         # for google cloud us.gcr.io/ticketing-dev-281223/auth
           image: wangdzi/auth
+          env:
+            - name: JWT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-secret
+                  key: JWT_kEY
 ---
 apiVersion: v1
 kind: Service
